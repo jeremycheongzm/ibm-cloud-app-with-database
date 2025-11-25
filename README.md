@@ -1,18 +1,24 @@
-**Steps to Start
+## Steps to Start
 **Set up a virtual environment**
 - pip install --upgrade distro-info
 - pip3 install --upgrade pip==23.2.1
 - pip install virtualenv
 - virtualenv djangoenv
 - source djangoenv/bin/activate
+
 **Set up the Python runtime and test the template project.**
 - pip install -U -r requirements.txt
+
 **Create the initial migrations and generate the database schema:**
+
 Migrations are Django's way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema. They are designed to be mostly automatic, but you will need to know when to make migrations, when to run them, and the common problems you might run into. There are several commands which you will use to interact with migrations and Django's handling of database schema:
 - python3 manage.py makemigrations
 - python3 manage.py migrate
+
 **Run the server**
 - python3 manage.py runserver
+
+
 **General Notes**
 
 An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
